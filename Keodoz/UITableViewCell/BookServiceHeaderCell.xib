@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Bold.ttf">
+            <string>GTEestiProDisplay-Bold</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookServiceHeaderCell" rowHeight="304" id="KGk-i7-Jjw" customClass="BookServiceHeaderCell" customModule="Keodoz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbK-OU-cVh">
+                        <rect key="frame" x="18" y="15" width="205" height="23.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-gU-15C">
+                        <rect key="frame" x="18" y="46.5" width="40.5" height="20"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="17"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.54901960780000003" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpL-RA-bKs">
+                        <rect key="frame" x="78" y="48" width="148" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULT-T7-7UA">
+                        <rect key="frame" x="18" y="76" width="208" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8As-6H-v0U">
+                        <rect key="frame" x="228" y="14" width="74" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="bLO-4U-I4u"/>
+                            <constraint firstAttribute="height" constant="81" id="mjZ-6e-iN5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-63-G4h">
+                        <rect key="frame" x="18" y="105" width="284" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UMm-Nc-deC"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Service According to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-5c-ril">
+                        <rect key="frame" x="18" y="129" width="284" height="16.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.45490196078431372" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-Vn-l7g">
+                        <rect key="frame" x="18" y="150.5" width="284" height="30"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-wA-Ld3">
+                        <rect key="frame" x="280" y="158" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="MDz-dU-mkk"/>
+                            <constraint firstAttribute="width" constant="15" id="XPR-aa-l0Q"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpw-we-uso">
+                        <rect key="frame" x="18" y="183.5" width="284" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kdv-v5-tuX"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYb-om-DQ1">
+                        <rect key="frame" x="18" y="220" width="284" height="30"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where you want this service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2H-Os-jiE">
+                        <rect key="frame" x="18" y="196.5" width="284" height="16.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.4549019608" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-e9-aoa">
+                        <rect key="frame" x="280" y="227.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="X0k-CV-sst"/>
+                            <constraint firstAttribute="width" constant="15" id="dq4-sw-Kxr"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-gl-vFX">
+                        <rect key="frame" x="18" y="255" width="284" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yYk-Yx-UaR"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Services You want " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmc-yW-Hiv">
+                        <rect key="frame" x="18" y="275" width="284" height="16.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.4549019608" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ddg-Vn-l7g" firstAttribute="leading" secondItem="6fU-5c-ril" secondAttribute="leading" id="0UG-op-b3a"/>
+                    <constraint firstItem="Ddg-Vn-l7g" firstAttribute="top" secondItem="6fU-5c-ril" secondAttribute="bottom" constant="5" id="3vT-CU-a6p"/>
+                    <constraint firstItem="7eV-gU-15C" firstAttribute="leading" secondItem="DbK-OU-cVh" secondAttribute="leading" id="6ue-C9-NGz"/>
+                    <constraint firstItem="NBy-gl-vFX" firstAttribute="leading" secondItem="aYb-om-DQ1" secondAttribute="leading" id="79s-Nw-SjL"/>
+                    <constraint firstItem="8As-6H-v0U" firstAttribute="leading" secondItem="BpL-RA-bKs" secondAttribute="trailing" constant="2" id="7Il-p0-bJF"/>
+                    <constraint firstItem="DbK-OU-cVh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="7Ks-SL-aJM"/>
+                    <constraint firstItem="ULT-T7-7UA" firstAttribute="leading" secondItem="7eV-gU-15C" secondAttribute="leading" id="7f1-eI-32j"/>
+                    <constraint firstItem="6fU-5c-ril" firstAttribute="trailing" secondItem="nQP-63-G4h" secondAttribute="trailing" id="81v-B7-Xns"/>
+                    <constraint firstItem="Qek-wA-Ld3" firstAttribute="centerY" secondItem="Ddg-Vn-l7g" secondAttribute="centerY" id="9Xl-ad-xHX"/>
+                    <constraint firstItem="s2H-Os-jiE" firstAttribute="leading" secondItem="6fU-5c-ril" secondAttribute="leading" id="9u7-Lq-w0j"/>
+                    <constraint firstItem="nQP-63-G4h" firstAttribute="trailing" secondItem="8As-6H-v0U" secondAttribute="trailing" id="Ajq-Hy-97Q"/>
+                    <constraint firstItem="Hpw-we-uso" firstAttribute="leading" secondItem="Ddg-Vn-l7g" secondAttribute="leading" id="Be3-db-SpV"/>
+                    <constraint firstItem="8As-6H-v0U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Bng-ed-tbg"/>
+                    <constraint firstItem="Hpw-we-uso" firstAttribute="trailing" secondItem="Ddg-Vn-l7g" secondAttribute="trailing" id="Cad-DU-MQB"/>
+                    <constraint firstItem="6fU-5c-ril" firstAttribute="leading" secondItem="nQP-63-G4h" secondAttribute="leading" id="FAn-7R-9mp"/>
+                    <constraint firstItem="Hpw-we-uso" firstAttribute="top" secondItem="Ddg-Vn-l7g" secondAttribute="bottom" constant="3" id="GbE-Qw-haF"/>
+                    <constraint firstItem="Pbu-e9-aoa" firstAttribute="centerY" secondItem="aYb-om-DQ1" secondAttribute="centerY" id="Grf-OQ-FXQ"/>
+                    <constraint firstItem="BpL-RA-bKs" firstAttribute="centerY" secondItem="7eV-gU-15C" secondAttribute="centerY" id="H5Z-v2-apP"/>
+                    <constraint firstItem="s2H-Os-jiE" firstAttribute="top" secondItem="Hpw-we-uso" secondAttribute="bottom" constant="12" id="I2n-s7-ndf"/>
+                    <constraint firstItem="s2H-Os-jiE" firstAttribute="trailing" secondItem="6fU-5c-ril" secondAttribute="trailing" id="Ijl-3Y-UGr"/>
+                    <constraint firstItem="Ddg-Vn-l7g" firstAttribute="trailing" secondItem="6fU-5c-ril" secondAttribute="trailing" id="My3-JC-kfv"/>
+                    <constraint firstItem="ULT-T7-7UA" firstAttribute="trailing" secondItem="BpL-RA-bKs" secondAttribute="trailing" id="RjT-h8-l53"/>
+                    <constraint firstItem="Pbu-e9-aoa" firstAttribute="trailing" secondItem="Qek-wA-Ld3" secondAttribute="trailing" id="SDG-jH-NnF"/>
+                    <constraint firstItem="DbK-OU-cVh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="UgP-gq-KVw"/>
+                    <constraint firstItem="nQP-63-G4h" firstAttribute="leading" secondItem="DbK-OU-cVh" secondAttribute="leading" id="WC7-Ye-zlR"/>
+                    <constraint firstItem="aYb-om-DQ1" firstAttribute="leading" secondItem="Ddg-Vn-l7g" secondAttribute="leading" id="Wtn-oF-hz9"/>
+                    <constraint firstItem="aYb-om-DQ1" firstAttribute="top" secondItem="s2H-Os-jiE" secondAttribute="bottom" constant="7" id="XHM-WE-aAS"/>
+                    <constraint firstItem="8As-6H-v0U" firstAttribute="leading" secondItem="DbK-OU-cVh" secondAttribute="trailing" constant="5" id="aU1-70-EEU"/>
+                    <constraint firstAttribute="trailing" secondItem="8As-6H-v0U" secondAttribute="trailing" constant="18" id="bBD-vw-Xac"/>
+                    <constraint firstItem="BpL-RA-bKs" firstAttribute="leading" secondItem="7eV-gU-15C" secondAttribute="trailing" constant="19.5" id="cRh-EV-f37"/>
+                    <constraint firstItem="Pmc-yW-Hiv" firstAttribute="leading" secondItem="NBy-gl-vFX" secondAttribute="leading" id="dHe-c0-i7e"/>
+                    <constraint firstItem="Pmc-yW-Hiv" firstAttribute="top" secondItem="NBy-gl-vFX" secondAttribute="bottom" constant="19" id="ek6-Eh-pfa"/>
+                    <constraint firstItem="Qek-wA-Ld3" firstAttribute="leading" secondItem="Ddg-Vn-l7g" secondAttribute="trailing" constant="-22" id="k2K-BV-9HW"/>
+                    <constraint firstItem="nQP-63-G4h" firstAttribute="top" secondItem="8As-6H-v0U" secondAttribute="bottom" constant="10" id="pNX-tg-aHC"/>
+                    <constraint firstItem="NBy-gl-vFX" firstAttribute="trailing" secondItem="aYb-om-DQ1" secondAttribute="trailing" id="qIe-fv-11i"/>
+                    <constraint firstItem="ULT-T7-7UA" firstAttribute="top" secondItem="7eV-gU-15C" secondAttribute="bottom" constant="9.5" id="qVy-5Q-0i3"/>
+                    <constraint firstItem="7eV-gU-15C" firstAttribute="top" secondItem="DbK-OU-cVh" secondAttribute="bottom" constant="8" id="rhh-bk-coR"/>
+                    <constraint firstItem="aYb-om-DQ1" firstAttribute="trailing" secondItem="Ddg-Vn-l7g" secondAttribute="trailing" id="sMI-r5-2eg"/>
+                    <constraint firstItem="NBy-gl-vFX" firstAttribute="top" secondItem="aYb-om-DQ1" secondAttribute="bottom" constant="5" id="thN-T1-n5T"/>
+                    <constraint firstItem="6fU-5c-ril" firstAttribute="top" secondItem="nQP-63-G4h" secondAttribute="bottom" constant="23" id="wXp-Ek-RMF"/>
+                    <constraint firstItem="Pmc-yW-Hiv" firstAttribute="trailing" secondItem="NBy-gl-vFX" secondAttribute="trailing" id="wyA-Gm-zep"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnChoseService" destination="Ddg-Vn-l7g" id="Qfe-2s-Jfg"/>
+                <outlet property="btnServiceWant" destination="aYb-om-DQ1" id="Pzt-Q3-dEd"/>
+                <outlet property="imgOfUser" destination="8As-6H-v0U" id="jQe-gL-QXs"/>
+                <outlet property="lblPrice" destination="ULT-T7-7UA" id="S8b-Gz-83q"/>
+                <outlet property="lblRating" destination="BpL-RA-bKs" id="bTb-jY-wHL"/>
+                <outlet property="lblService" destination="7eV-gU-15C" id="lph-3v-MYI"/>
+                <outlet property="lblUserName" destination="DbK-OU-cVh" id="IMC-Bm-FZj"/>
+            </connections>
+            <point key="canvasLocation" x="-104.34782608695653" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown" width="10" height="10"/>
+    </resources>
+</document>

@@ -8,16 +8,53 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        if #available(iOS 13.0, *) {
+                   window?.overrideUserInterfaceStyle = .light
+               }
+               if #available(iOS 13.0, *) {
+                   guard let _ = (scene as? UIWindowScene) else { return }
+                if let session: Session = Persistence(with: .user).load(), let token = session.token {
+                          
+                     if session.accountType == "1" {
+                          let storyboard: UIStoryboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+                                  let homeVC = storyboard.instantiateViewController(withIdentifier: "KDProUserBookingVC")
+                                  let side = storyboard.instantiateViewController(withIdentifier: "KDSideMenuVC")
+
+                                  let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: homeVC), leftMenuViewController: side)
+                                  sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
+                                  sideMenu.configure(SSASideMenu.ContentViewEffect(alpha: 1.0, scale: 0.7))
+                                  sideMenu.configure(SSASideMenu.ContentViewShadow(enabled: true, color: UIColor.black, opacity: 0.6, radius: 6.0))
+                                  window?.rootViewController = sideMenu
+                                window?.makeKeyAndVisible()
+                     } else {
+                          let storyboard: UIStoryboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+                                  let homeVC = storyboard.instantiateViewController(withIdentifier: "KDSerciceListVC")
+                                  let side = storyboard.instantiateViewController(withIdentifier: "KDSideMenuVC")
+
+                                  let sideMenu = SSASideMenu(contentViewController: UINavigationController(rootViewController: homeVC), leftMenuViewController: side)
+                                  sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
+                                  sideMenu.configure(SSASideMenu.ContentViewEffect(alpha: 1.0, scale: 0.7))
+                                  sideMenu.configure(SSASideMenu.ContentViewShadow(enabled: true, color: UIColor.black, opacity: 0.6, radius: 6.0))
+                                  window?.rootViewController = sideMenu
+                                window?.makeKeyAndVisible()
+
+                     }
+
+                    
+                 }
+
+               } else {
+                   // Fallback on earlier versions
+               }
+//        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

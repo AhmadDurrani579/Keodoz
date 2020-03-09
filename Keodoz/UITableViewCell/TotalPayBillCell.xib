@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Bold.ttf">
+            <string>GTEestiProDisplay-Bold</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalPayBillCell" rowHeight="398" id="KGk-i7-Jjw" customClass="TotalPayBillCell" customModule="Keodoz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-IJ-r4h">
+                        <rect key="frame" x="18" y="11" width="89" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.45098039215686275" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="6rw-Ge-Ln7">
+                        <rect key="frame" x="18" y="40.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="STO-yg-fX7"/>
+                            <constraint firstAttribute="width" constant="16" id="fcm-OM-7al"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0g-3a-zw2" customClass="CardView" customModule="Keodoz" customModuleProvider="target">
+                        <rect key="frame" x="40" y="34.5" width="260" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jV-Gf-qfH">
+                                <rect key="frame" x="15" y="4" width="225" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.44705882352941173" green="0.46666666666666667" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5jV-Gf-qfH" firstAttribute="centerY" secondItem="x0g-3a-zw2" secondAttribute="centerY" id="MKo-8J-NB9"/>
+                            <constraint firstAttribute="height" constant="28" id="e1a-JH-bUk"/>
+                            <constraint firstAttribute="trailing" secondItem="5jV-Gf-qfH" secondAttribute="trailing" constant="20" id="pFF-AY-mMQ"/>
+                            <constraint firstItem="5jV-Gf-qfH" firstAttribute="leading" secondItem="x0g-3a-zw2" secondAttribute="leading" constant="15" id="vza-15-db2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbR-2W-aGs">
+                        <rect key="frame" x="18" y="75" width="89" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.42745098040000001" green="0.45098039220000002" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRe-ag-IfC" customClass="CardView" customModule="Keodoz" customModuleProvider="target">
+                        <rect key="frame" x="18" y="98" width="89" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoA-KO-FXC">
+                                <rect key="frame" x="2" y="4" width="85" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.44705882349999998" green="0.46666666670000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.92549019610000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CoA-KO-FXC" secondAttribute="trailing" constant="2" id="Q4a-V8-Pbp"/>
+                            <constraint firstAttribute="height" constant="28" id="RfN-YM-rkd"/>
+                            <constraint firstItem="CoA-KO-FXC" firstAttribute="centerY" secondItem="oRe-ag-IfC" secondAttribute="centerY" id="Szo-Xm-hgQ"/>
+                            <constraint firstItem="CoA-KO-FXC" firstAttribute="leading" secondItem="oRe-ag-IfC" secondAttribute="leading" constant="2" id="qWK-6Y-kR3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-mv-0OZ">
+                        <rect key="frame" x="18" y="141" width="53" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.42745098040000001" green="0.45098039220000002" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-ah-hTm" customClass="CardView" customModule="Keodoz" customModuleProvider="target">
+                        <rect key="frame" x="18" y="164" width="59" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Label  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaG-3A-Nd7">
+                                <rect key="frame" x="2" y="4" width="55" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.44705882349999998" green="0.46666666670000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.92549019610000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Pv3-dM-gdr"/>
+                            <constraint firstItem="uaG-3A-Nd7" firstAttribute="centerY" secondItem="bgA-ah-hTm" secondAttribute="centerY" id="SaN-HR-F7v"/>
+                            <constraint firstItem="uaG-3A-Nd7" firstAttribute="leading" secondItem="bgA-ah-hTm" secondAttribute="leading" constant="2" id="ciR-XL-Uhm"/>
+                            <constraint firstAttribute="trailing" secondItem="uaG-3A-Nd7" secondAttribute="trailing" constant="2" id="wud-8G-Ggy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-y1-3PH">
+                        <rect key="frame" x="20" y="203" width="280" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="S13-8u-pii"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-sp-pLf">
+                        <rect key="frame" x="248" y="220" width="36" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1E-kB-Tsz">
+                        <rect key="frame" x="69" y="221" width="85.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW0-QU-1jv">
+                        <rect key="frame" x="248" y="250.5" width="36" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IG5-fG-4BL">
+                        <rect key="frame" x="69" y="251.5" width="57" height="15.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL0-C7-A6A">
+                        <rect key="frame" x="248" y="281" width="36" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-cc-CwK">
+                        <rect key="frame" x="69" y="282" width="46" height="15.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-0c-RFe">
+                        <rect key="frame" x="248" y="311.5" width="36" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wQ-oL-Qzs">
+                        <rect key="frame" x="69" y="312.5" width="47.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z00-JN-xq6">
+                        <rect key="frame" x="248" y="341" width="36" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.25882352939999997" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7l-V6-NN0">
+                        <rect key="frame" x="69" y="341" width="32.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.46666666670000001" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VAL-sp-pLf" firstAttribute="top" secondItem="z0c-y1-3PH" secondAttribute="bottom" constant="16" id="06G-jm-vEH"/>
+                    <constraint firstItem="bgA-ah-hTm" firstAttribute="leading" secondItem="Ofs-mv-0OZ" secondAttribute="leading" id="3sD-yv-Tgj"/>
+                    <constraint firstItem="z0c-y1-3PH" firstAttribute="top" secondItem="uaG-3A-Nd7" secondAttribute="bottom" constant="15" id="8f0-b3-WuH"/>
+                    <constraint firstItem="Jpx-IJ-r4h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="9bd-Bw-7kx"/>
+                    <constraint firstItem="2PU-0c-RFe" firstAttribute="trailing" secondItem="tL0-C7-A6A" secondAttribute="trailing" id="9w3-rt-fIT"/>
+                    <constraint firstAttribute="trailing" secondItem="x0g-3a-zw2" secondAttribute="trailing" constant="20" id="B7i-Y4-JfW"/>
+                    <constraint firstItem="7wQ-oL-Qzs" firstAttribute="centerY" secondItem="2PU-0c-RFe" secondAttribute="centerY" id="CdC-WE-xLX"/>
+                    <constraint firstItem="z00-JN-xq6" firstAttribute="trailing" secondItem="2PU-0c-RFe" secondAttribute="trailing" id="DiC-SS-miQ"/>
+                    <constraint firstItem="fW0-QU-1jv" firstAttribute="trailing" secondItem="VAL-sp-pLf" secondAttribute="trailing" id="Dqi-0u-IfU"/>
+                    <constraint firstItem="dg6-cc-CwK" firstAttribute="centerY" secondItem="tL0-C7-A6A" secondAttribute="centerY" id="Ezs-96-E2z"/>
+                    <constraint firstItem="bgA-ah-hTm" firstAttribute="top" secondItem="Ofs-mv-0OZ" secondAttribute="bottom" constant="5.5" id="FSn-W8-Y5Z"/>
+                    <constraint firstItem="cbR-2W-aGs" firstAttribute="top" secondItem="x0g-3a-zw2" secondAttribute="bottom" constant="12.5" id="Gay-s2-m5j"/>
+                    <constraint firstItem="x0g-3a-zw2" firstAttribute="centerY" secondItem="6rw-Ge-Ln7" secondAttribute="centerY" id="J6c-sl-5N2"/>
+                    <constraint firstItem="T7l-V6-NN0" firstAttribute="leading" secondItem="7wQ-oL-Qzs" secondAttribute="leading" id="LrO-cV-p35"/>
+                    <constraint firstItem="Jpx-IJ-r4h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="LzX-SP-ceC"/>
+                    <constraint firstItem="2PU-0c-RFe" firstAttribute="top" secondItem="tL0-C7-A6A" secondAttribute="bottom" constant="13" id="Mqm-OT-XuI"/>
+                    <constraint firstItem="6rw-Ge-Ln7" firstAttribute="leading" secondItem="Jpx-IJ-r4h" secondAttribute="leading" id="NOB-h1-gdu"/>
+                    <constraint firstItem="oRe-ag-IfC" firstAttribute="trailing" secondItem="cbR-2W-aGs" secondAttribute="trailing" id="NhV-dH-9Ly"/>
+                    <constraint firstItem="fW0-QU-1jv" firstAttribute="top" secondItem="VAL-sp-pLf" secondAttribute="bottom" constant="13" id="W0g-is-vX1"/>
+                    <constraint firstItem="Ofs-mv-0OZ" firstAttribute="leading" secondItem="oRe-ag-IfC" secondAttribute="leading" id="XQz-rr-dTN"/>
+                    <constraint firstItem="z00-JN-xq6" firstAttribute="top" secondItem="2PU-0c-RFe" secondAttribute="bottom" constant="12" id="Y3w-J3-IqW"/>
+                    <constraint firstItem="d1E-kB-Tsz" firstAttribute="centerY" secondItem="VAL-sp-pLf" secondAttribute="centerY" id="Ycv-gD-ULO"/>
+                    <constraint firstItem="cbR-2W-aGs" firstAttribute="leading" secondItem="Jpx-IJ-r4h" secondAttribute="leading" id="Yjx-aS-Gpg"/>
+                    <constraint firstItem="tL0-C7-A6A" firstAttribute="top" secondItem="fW0-QU-1jv" secondAttribute="bottom" constant="13" id="cVF-Cc-mAk"/>
+                    <constraint firstItem="x0g-3a-zw2" firstAttribute="leading" secondItem="6rw-Ge-Ln7" secondAttribute="trailing" constant="6" id="d8T-yc-XX1"/>
+                    <constraint firstItem="7wQ-oL-Qzs" firstAttribute="leading" secondItem="dg6-cc-CwK" secondAttribute="leading" id="d9e-Ai-tXX"/>
+                    <constraint firstItem="tL0-C7-A6A" firstAttribute="trailing" secondItem="fW0-QU-1jv" secondAttribute="trailing" id="g5x-c9-Uym"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VAL-sp-pLf" secondAttribute="trailing" constant="20" id="hU7-6L-maB"/>
+                    <constraint firstItem="Ofs-mv-0OZ" firstAttribute="top" secondItem="oRe-ag-IfC" secondAttribute="bottom" constant="15" id="k4J-LL-HIS"/>
+                    <constraint firstItem="dg6-cc-CwK" firstAttribute="leading" secondItem="IG5-fG-4BL" secondAttribute="leading" id="kcD-uO-Veg"/>
+                    <constraint firstItem="IG5-fG-4BL" firstAttribute="leading" secondItem="d1E-kB-Tsz" secondAttribute="leading" id="mwd-Bx-uEs"/>
+                    <constraint firstItem="6rw-Ge-Ln7" firstAttribute="top" secondItem="Jpx-IJ-r4h" secondAttribute="bottom" constant="12" id="nem-ig-dqj"/>
+                    <constraint firstItem="IG5-fG-4BL" firstAttribute="centerY" secondItem="fW0-QU-1jv" secondAttribute="centerY" id="pkN-YQ-BSK"/>
+                    <constraint firstItem="oRe-ag-IfC" firstAttribute="top" secondItem="cbR-2W-aGs" secondAttribute="bottom" constant="5.5" id="tDC-h1-9Ft"/>
+                    <constraint firstItem="T7l-V6-NN0" firstAttribute="centerY" secondItem="z00-JN-xq6" secondAttribute="centerY" id="ubG-hH-4LJ"/>
+                    <constraint firstItem="d1E-kB-Tsz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="53" id="vfr-1t-rWo"/>
+                    <constraint firstItem="z0c-y1-3PH" firstAttribute="leading" secondItem="uaG-3A-Nd7" secondAttribute="leading" id="wXl-Kc-UF5"/>
+                    <constraint firstItem="z0c-y1-3PH" firstAttribute="trailing" secondItem="x0g-3a-zw2" secondAttribute="trailing" id="yQ0-hb-vKT"/>
+                    <constraint firstItem="oRe-ag-IfC" firstAttribute="leading" secondItem="cbR-2W-aGs" secondAttribute="leading" id="zsv-SK-l2c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAddress" destination="uaG-3A-Nd7" id="MnW-no-9do"/>
+                <outlet property="lblDateSelect" destination="5jV-Gf-qfH" id="MmE-iA-QRi"/>
+                <outlet property="lblDiscount" destination="2PU-0c-RFe" id="4O2-Fc-v6D"/>
+                <outlet property="lblSerVicePerdayCharge" destination="VAL-sp-pLf" id="LMY-hH-K3U"/>
+                <outlet property="lblSubTotal" destination="tL0-C7-A6A" id="WN7-G1-L0O"/>
+                <outlet property="lblTotalBill" destination="z00-JN-xq6" id="Fnw-nv-o0U"/>
+                <outlet property="lblTotalDay" destination="fW0-QU-1jv" id="BlR-Tf-50a"/>
+                <outlet property="lbltimeSelect" destination="CoA-KO-FXC" id="Fbw-2x-yu3"/>
+            </connections>
+            <point key="canvasLocation" x="102.89855072463769" y="103.125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calender" width="14" height="14"/>
+    </resources>
+</document>

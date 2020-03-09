@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Keudoz access photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Keudoz access photo Library</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Keudoz need location permission for accurate posting location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Keudoz need location permission for accurate posting location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Keudoz need location permission for accurate posting location</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

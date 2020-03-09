@@ -1,0 +1,1509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E28C4C9DFA066F4395C18BF /* Pods_Keudoz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB00D305B1E00745E42BE90 /* Pods_Keudoz.framework */; };
+		E2036C9223A3EBC000D0ECDE /* KDAcceptBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2036C9123A3EBC000D0ECDE /* KDAcceptBookingVC.swift */; };
+		E2036C9523A404D800D0ECDE /* KDProUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2036C9423A404D800D0ECDE /* KDProUserProfileVC.swift */; };
+		E2036C9723A41C5700D0ECDE /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2036C9623A41C5700D0ECDE /* ProfileInfo.swift */; };
+		E2036C9923A4366900D0ECDE /* KDProUserEditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2036C9823A4366900D0ECDE /* KDProUserEditProfileVC.swift */; };
+		E2045BEE238A62B900B30515 /* KDSerciceListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045BED238A62B900B30515 /* KDSerciceListVC.swift */; };
+		E2045BF0238A62D700B30515 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2045BEF238A62D700B30515 /* Home.storyboard */; };
+		E2045BF4238A642400B30515 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045BF2238A642400B30515 /* SSASideMenu.swift */; };
+		E2045BF5238A642400B30515 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045BF3238A642400B30515 /* LeftMenuViewController.swift */; };
+		E2045BFA238A686D00B30515 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045BF8238A686D00B30515 /* ServiceCell.swift */; };
+		E2045BFB238A686D00B30515 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2045BF9238A686D00B30515 /* ServiceCell.xib */; };
+		E2045BFD238A6B0D00B30515 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045BFC238A6B0D00B30515 /* ServiceResponse.swift */; };
+		E20483862389CB1F00586490 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20483852389CB1F00586490 /* RegistrationPresenter.swift */; };
+		E20483892389CB5400586490 /* TQConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20483882389CB5300586490 /* TQConstants.swift */; };
+		E205CD6D238C34D40027CD29 /* BookingOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E205CD6B238C34D40027CD29 /* BookingOrderCell.swift */; };
+		E205CD6E238C34D40027CD29 /* BookingOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E205CD6C238C34D40027CD29 /* BookingOrderCell.xib */; };
+		E205CD71238C54240027CD29 /* DateAndPaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E205CD6F238C54240027CD29 /* DateAndPaymentCell.swift */; };
+		E205CD72238C54240027CD29 /* DateAndPaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E205CD70238C54240027CD29 /* DateAndPaymentCell.xib */; };
+		E205CD75238C5DC90027CD29 /* KDScheduleBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E205CD74238C5DC90027CD29 /* KDScheduleBookingVC.swift */; };
+		E21AD7F1238BC7490015580C /* KDSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AD7F0238BC7490015580C /* KDSideMenuVC.swift */; };
+		E21AD7F3238BC7E10015580C /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21AD7F2238BC7E10015580C /* SideMenu.swift */; };
+		E22CBDFE2389B204001F83E6 /* GT-Eesti-Pro-Display-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDF62389B204001F83E6 /* GT-Eesti-Pro-Display-Bold-Italic.ttf */; };
+		E22CBDFF2389B204001F83E6 /* GT-Eesti-Pro-Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDF72389B204001F83E6 /* GT-Eesti-Pro-Display-Medium.ttf */; };
+		E22CBE002389B204001F83E6 /* GT-Eesti-Pro-Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDF82389B204001F83E6 /* GT-Eesti-Pro-Display-Bold.ttf */; };
+		E22CBE012389B204001F83E6 /* GT-Eesti-Pro-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDF92389B204001F83E6 /* GT-Eesti-Pro-Display-Regular.ttf */; };
+		E22CBE022389B204001F83E6 /* GT-Eesti-Pro-Display-UBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDFA2389B204001F83E6 /* GT-Eesti-Pro-Display-UBold.ttf */; };
+		E22CBE032389B204001F83E6 /* GT-Eesti-Pro-Display-ULight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDFB2389B204001F83E6 /* GT-Eesti-Pro-Display-ULight.ttf */; };
+		E22CBE042389B204001F83E6 /* GT-Eesti-Pro-Display-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDFC2389B204001F83E6 /* GT-Eesti-Pro-Display-Thin.ttf */; };
+		E22CBE052389B204001F83E6 /* GT-Eesti-Pro-Display-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E22CBDFD2389B204001F83E6 /* GT-Eesti-Pro-Display-Light.ttf */; };
+		E22CBE072389C474001F83E6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CBE062389C473001F83E6 /* RoundedButton.swift */; };
+		E22CBE0A2389C74A001F83E6 /* KDLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CBE092389C74A001F83E6 /* KDLoginVC.swift */; };
+		E236420F23A192D300FBDB26 /* KDServiceCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236420E23A192D300FBDB26 /* KDServiceCreateVC.swift */; };
+		E2376CC023930BB40072F2DF /* KDProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2376CBF23930BB40072F2DF /* KDProfileVC.swift */; };
+		E2376CC323930FAC0072F2DF /* KDBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2376CC223930FAC0072F2DF /* KDBookingVC.swift */; };
+		E2376CC6239310320072F2DF /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2376CC4239310320072F2DF /* BookingCell.swift */; };
+		E2376CC7239310320072F2DF /* BookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2376CC5239310320072F2DF /* BookingCell.xib */; };
+		E2745CF023883F9200F665E4 /* PAStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2745CD123883F9200F665E4 /* PAStorageHelper.m */; };
+		E2745CF623883F9200F665E4 /* GeocodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CD923883F9200F665E4 /* GeocodeService.swift */; };
+		E2745CF723883F9200F665E4 /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CDA23883F9200F665E4 /* ImagePickerService.swift */; };
+		E2745CF823883F9200F665E4 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CDD23883F9200F665E4 /* AuthEndpoint.swift */; };
+		E2745CF923883F9200F665E4 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CDF23883F9200F665E4 /* LoginResponse.swift */; };
+		E2745CFA23883F9200F665E4 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE123883F9200F665E4 /* NetworkLayer.swift */; };
+		E2745CFB23883F9200F665E4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE223883F9200F665E4 /* Response.swift */; };
+		E2745CFC23883F9200F665E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE323883F9200F665E4 /* Endpoint.swift */; };
+		E2745CFD23883F9200F665E4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE523883F9200F665E4 /* Persistence.swift */; };
+		E2745CFF23883F9200F665E4 /* HomePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE823883F9200F665E4 /* HomePresentable.swift */; };
+		E2745D0023883F9200F665E4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CE923883F9200F665E4 /* Utilities.swift */; };
+		E2745D0123883F9200F665E4 /* GeneralUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CEA23883F9200F665E4 /* GeneralUtilities.swift */; };
+		E2745D0223883F9200F665E4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CEC23883F9200F665E4 /* Extensions.swift */; };
+		E2745D0323883F9200F665E4 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CED23883F9200F665E4 /* Storyboard.swift */; };
+		E2745D0423883F9200F665E4 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745CEF23883F9200F665E4 /* ProgressIndicator.swift */; };
+		E2745D2C238844E300F665E4 /* WAShareHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D08238844E200F665E4 /* WAShareHelper.swift */; };
+		E2745D2D238844E300F665E4 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0A238844E200F665E4 /* Commons.swift */; };
+		E2745D2E238844E300F665E4 /* GeoRegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0B238844E200F665E4 /* GeoRegionRequest.swift */; };
+		E2745D2F238844E300F665E4 /* VisitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0C238844E200F665E4 /* VisitRequest.swift */; };
+		E2745D30238844E300F665E4 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0D238844E200F665E4 /* LocationRequest.swift */; };
+		E2745D31238844E300F665E4 /* HeadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0E238844E200F665E4 /* HeadingRequest.swift */; };
+		E2745D32238844E300F665E4 /* BeaconsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D0F238844E200F665E4 /* BeaconsManager.swift */; };
+		E2745D33238844E300F665E4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D11238844E200F665E4 /* LocationManager.swift */; };
+		E2745D34238844E300F665E4 /* BeaconAdvertiseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D12238844E200F665E4 /* BeaconAdvertiseRequest.swift */; };
+		E2745D35238844E300F665E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2745D13238844E200F665E4 /* Info.plist */; };
+		E2745D36238844E300F665E4 /* BeaconRegionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D14238844E200F665E4 /* BeaconRegionRequest.swift */; };
+		E2745D37238844E300F665E4 /* ConstantDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D15238844E200F665E4 /* ConstantDevices.swift */; };
+		E2745D38238844E300F665E4 /* UITextField+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E2745D19238844E200F665E4 /* UITextField+Additions.m */; };
+		E2745D39238844E300F665E4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D1A238844E200F665E4 /* CardView.swift */; };
+		E2745D3A238844E300F665E4 /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2745D1E238844E200F665E4 /* UIViewController+Helper.m */; };
+		E2745D3B238844E300F665E4 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D1F238844E200F665E4 /* ConnectionCheck.swift */; };
+		E2745D3C238844E300F665E4 /* KGRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D20238844E200F665E4 /* KGRadioButton.swift */; };
+		E2745D3D238844E300F665E4 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D21238844E200F665E4 /* Buttons.swift */; };
+		E2745D3E238844E300F665E4 /* demoImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2745D23238844E200F665E4 /* demoImage.jpg */; };
+		E2745D3F238844E300F665E4 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D24238844E200F665E4 /* PhotoPicker.swift */; };
+		E2745D40238844E300F665E4 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D26238844E300F665E4 /* UIAlertControllerExtension.swift */; };
+		E2745D41238844E300F665E4 /* UIViewcontrollerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D27238844E300F665E4 /* UIViewcontrollerExtension.swift */; };
+		E2745D42238844E300F665E4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D29238844E300F665E4 /* UIColorExtension.swift */; };
+		E2745D43238844E300F665E4 /* WAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D2A238844E300F665E4 /* WAView.swift */; };
+		E2745D44238844E300F665E4 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745D2B238844E300F665E4 /* CardCell.swift */; };
+		E27A1D0B2394FC3300DFB6A6 /* KDOrderEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27A1D0A2394FC3300DFB6A6 /* KDOrderEndVC.swift */; };
+		E292EF9623A361B4007D0FF7 /* KDProUserBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292EF9523A361B4007D0FF7 /* KDProUserBookingVC.swift */; };
+		E292EF9823A36318007D0FF7 /* ProUserOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292EF9723A36318007D0FF7 /* ProUserOrder.swift */; };
+		E29B9B992387E483009084E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B9B982387E483009084E3 /* AppDelegate.swift */; };
+		E29B9B9B2387E483009084E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B9B9A2387E483009084E3 /* SceneDelegate.swift */; };
+		E29B9BA02387E483009084E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29B9B9E2387E483009084E3 /* Main.storyboard */; };
+		E29B9BA22387E484009084E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29B9BA12387E484009084E3 /* Assets.xcassets */; };
+		E29B9BA52387E484009084E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29B9BA32387E484009084E3 /* LaunchScreen.storyboard */; };
+		E29B9BB02387E484009084E3 /* KeodozTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B9BAF2387E484009084E3 /* KeodozTests.swift */; };
+		E29B9BBB2387E484009084E3 /* KeodozUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B9BBA2387E484009084E3 /* KeodozUITests.swift */; };
+		E2ABD6CE238BC8D100AF0C33 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2ABD6CC238BC8D100AF0C33 /* SideMenuCell.xib */; };
+		E2ABD6CF238BC8D100AF0C33 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABD6CD238BC8D100AF0C33 /* SideMenuCell.swift */; };
+		E2B9D2A223884F1000A91EA2 /* KDSelectLoginOrSignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9D2A123884F1000A91EA2 /* KDSelectLoginOrSignVC.swift */; };
+		E2BF517E238A826C00353ACF /* CoachListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF517C238A826C00353ACF /* CoachListCell.swift */; };
+		E2BF517F238A826C00353ACF /* CoachListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF517D238A826C00353ACF /* CoachListCell.xib */; };
+		E2BF5182238ABA7900353ACF /* KDServiceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF5181238ABA7900353ACF /* KDServiceDetailVC.swift */; };
+		E2BF5185238ABDB000353ACF /* KDServiceHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF5183238ABDB000353ACF /* KDServiceHeaderCell.swift */; };
+		E2BF5186238ABDB000353ACF /* KDServiceHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF5184238ABDB000353ACF /* KDServiceHeaderCell.xib */; };
+		E2BF5189238AC62E00353ACF /* HeaderCellForService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF5187238AC62E00353ACF /* HeaderCellForService.swift */; };
+		E2BF518A238AC62E00353ACF /* HeaderCellForService.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF5188238AC62E00353ACF /* HeaderCellForService.xib */; };
+		E2BF518D238AC79900353ACF /* ServicesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF518B238AC79900353ACF /* ServicesCollectionCell.swift */; };
+		E2BF518E238AC79900353ACF /* ServicesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF518C238AC79900353ACF /* ServicesCollectionCell.xib */; };
+		E2BF5195238ACB9200353ACF /* KDServiceHeaderCellss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF5193238ACB9200353ACF /* KDServiceHeaderCellss.swift */; };
+		E2BF5196238ACB9200353ACF /* KDServiceHeaderCellss.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF5194238ACB9200353ACF /* KDServiceHeaderCellss.xib */; };
+		E2BF5199238ACC0A00353ACF /* HeaderCellForServicesss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF5197238ACC0A00353ACF /* HeaderCellForServicesss.swift */; };
+		E2BF519A238ACC0A00353ACF /* HeaderCellForServicesss.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF5198238ACC0A00353ACF /* HeaderCellForServicesss.xib */; };
+		E2BF519D238ACC4B00353ACF /* ServicesCollectionCellss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF519B238ACC4B00353ACF /* ServicesCollectionCellss.swift */; };
+		E2BF519E238ACC4B00353ACF /* ServicesCollectionCellss.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF519C238ACC4B00353ACF /* ServicesCollectionCellss.xib */; };
+		E2BF51A1238ACC9200353ACF /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF519F238ACC9200353ACF /* ReviewCell.swift */; };
+		E2BF51A2238ACC9200353ACF /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF51A0238ACC9200353ACF /* ReviewCell.xib */; };
+		E2BF51A5238B0BBF00353ACF /* KDBookNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51A4238B0BBF00353ACF /* KDBookNowVC.swift */; };
+		E2BF51A8238B0BFB00353ACF /* BookServiceHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51A6238B0BFB00353ACF /* BookServiceHeaderCell.swift */; };
+		E2BF51A9238B0BFB00353ACF /* BookServiceHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BF51A7238B0BFB00353ACF /* BookServiceHeaderCell.xib */; };
+		E2BF51AC238B244000353ACF /* KDAccountTypeSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51AB238B244000353ACF /* KDAccountTypeSelectVC.swift */; };
+		E2BF51AE238B264D00353ACF /* KDEnterEmailInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51AD238B264D00353ACF /* KDEnterEmailInfoVC.swift */; };
+		E2BF51B0238B275400353ACF /* KDPasswordInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51AF238B275400353ACF /* KDPasswordInfoVC.swift */; };
+		E2BF51B2238B27CD00353ACF /* KDAccountCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF51B1238B27CD00353ACF /* KDAccountCreateVC.swift */; };
+		E2C83D1B2397056C0051D05C /* KDSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C83D1A2397056C0051D05C /* KDSettingVC.swift */; };
+		E2C83D1D239708590051D05C /* KDChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C83D1C239708590051D05C /* KDChangePasswordVC.swift */; };
+		E2CA024E23A2CF6F00F8B4DA /* KDUserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA024D23A2CF6F00F8B4DA /* KDUserDetailVC.swift */; };
+		E2CA025123A2DC9C00F8B4DA /* MyBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA024F23A2DC9C00F8B4DA /* MyBookingCell.swift */; };
+		E2CA025223A2DC9C00F8B4DA /* MyBookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CA025023A2DC9C00F8B4DA /* MyBookingCell.xib */; };
+		E2D51FD02398E7DB008D9CA6 /* Final-Kuedoz-HiRes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2D51FCF2398E7DB008D9CA6 /* Final-Kuedoz-HiRes.jpg */; };
+		E2D51FD42398F553008D9CA6 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D51FD32398F553008D9CA6 /* DatePickerDialog.swift */; };
+		E2E018B0238C6FB90082D7DF /* KDSelectPaymentMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E018AF238C6FB90082D7DF /* KDSelectPaymentMethodVC.swift */; };
+		E2E018B3238C75890082D7DF /* KDAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E018B2238C75890082D7DF /* KDAddressVC.swift */; };
+		E2E018B6238C7EB10082D7DF /* KDPayNowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E018B5238C7EB10082D7DF /* KDPayNowVC.swift */; };
+		E2E018B9238C7F280082D7DF /* TotalPayBillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E018B7238C7F280082D7DF /* TotalPayBillCell.swift */; };
+		E2E018BA238C7F280082D7DF /* TotalPayBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E018B8238C7F280082D7DF /* TotalPayBillCell.xib */; };
+		E2E3D8DF238A76DB009BC31D /* KDListCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3D8DE238A76DB009BC31D /* KDListCoachVC.swift */; };
+		E2E3D8E1238A7B82009BC31D /* ServiceCoachResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3D8E0238A7B82009BC31D /* ServiceCoachResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E29B9BAC2387E484009084E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E29B9B8D2387E483009084E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29B9B942387E483009084E3;
+			remoteInfo = Keodoz;
+		};
+		E29B9BB72387E484009084E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E29B9B8D2387E483009084E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29B9B942387E483009084E3;
+			remoteInfo = Keodoz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB73276EE040CA2B75D3233 /* Pods-Keudoz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keudoz.debug.xcconfig"; path = "Target Support Files/Pods-Keudoz/Pods-Keudoz.debug.xcconfig"; sourceTree = "<group>"; };
+		48CDEE208D58752D49ECB1B4 /* Pods-Keudoz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keudoz.release.xcconfig"; path = "Target Support Files/Pods-Keudoz/Pods-Keudoz.release.xcconfig"; sourceTree = "<group>"; };
+		6AB00D305B1E00745E42BE90 /* Pods_Keudoz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keudoz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C8609605E877A26E6064E3 /* Pods-Keodoz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keodoz.debug.xcconfig"; path = "Target Support Files/Pods-Keodoz/Pods-Keodoz.debug.xcconfig"; sourceTree = "<group>"; };
+		A46FFB4AFB11158F4E0AD8D7 /* Pods-Keodoz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keodoz.release.xcconfig"; path = "Target Support Files/Pods-Keodoz/Pods-Keodoz.release.xcconfig"; sourceTree = "<group>"; };
+		E2036C9123A3EBC000D0ECDE /* KDAcceptBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAcceptBookingVC.swift; sourceTree = "<group>"; };
+		E2036C9423A404D800D0ECDE /* KDProUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDProUserProfileVC.swift; sourceTree = "<group>"; };
+		E2036C9623A41C5700D0ECDE /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		E2036C9823A4366900D0ECDE /* KDProUserEditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDProUserEditProfileVC.swift; sourceTree = "<group>"; };
+		E2045BED238A62B900B30515 /* KDSerciceListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSerciceListVC.swift; sourceTree = "<group>"; };
+		E2045BEF238A62D700B30515 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E2045BF2238A642400B30515 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
+		E2045BF3238A642400B30515 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		E2045BF8238A686D00B30515 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		E2045BF9238A686D00B30515 /* ServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		E2045BFC238A6B0D00B30515 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		E20483852389CB1F00586490 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		E20483882389CB5300586490 /* TQConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQConstants.swift; sourceTree = "<group>"; };
+		E205CD6B238C34D40027CD29 /* BookingOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingOrderCell.swift; sourceTree = "<group>"; };
+		E205CD6C238C34D40027CD29 /* BookingOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingOrderCell.xib; sourceTree = "<group>"; };
+		E205CD6F238C54240027CD29 /* DateAndPaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndPaymentCell.swift; sourceTree = "<group>"; };
+		E205CD70238C54240027CD29 /* DateAndPaymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateAndPaymentCell.xib; sourceTree = "<group>"; };
+		E205CD74238C5DC90027CD29 /* KDScheduleBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDScheduleBookingVC.swift; sourceTree = "<group>"; };
+		E21AD7F0238BC7490015580C /* KDSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSideMenuVC.swift; sourceTree = "<group>"; };
+		E21AD7F2238BC7E10015580C /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		E22CBDF62389B204001F83E6 /* GT-Eesti-Pro-Display-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		E22CBDF72389B204001F83E6 /* GT-Eesti-Pro-Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Medium.ttf"; sourceTree = "<group>"; };
+		E22CBDF82389B204001F83E6 /* GT-Eesti-Pro-Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Bold.ttf"; sourceTree = "<group>"; };
+		E22CBDF92389B204001F83E6 /* GT-Eesti-Pro-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Regular.ttf"; sourceTree = "<group>"; };
+		E22CBDFA2389B204001F83E6 /* GT-Eesti-Pro-Display-UBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-UBold.ttf"; sourceTree = "<group>"; };
+		E22CBDFB2389B204001F83E6 /* GT-Eesti-Pro-Display-ULight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-ULight.ttf"; sourceTree = "<group>"; };
+		E22CBDFC2389B204001F83E6 /* GT-Eesti-Pro-Display-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Thin.ttf"; sourceTree = "<group>"; };
+		E22CBDFD2389B204001F83E6 /* GT-Eesti-Pro-Display-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Eesti-Pro-Display-Light.ttf"; sourceTree = "<group>"; };
+		E22CBE062389C473001F83E6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E22CBE092389C74A001F83E6 /* KDLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDLoginVC.swift; sourceTree = "<group>"; };
+		E236420E23A192D300FBDB26 /* KDServiceCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDServiceCreateVC.swift; sourceTree = "<group>"; };
+		E2376CBF23930BB40072F2DF /* KDProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDProfileVC.swift; sourceTree = "<group>"; };
+		E2376CC223930FAC0072F2DF /* KDBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDBookingVC.swift; sourceTree = "<group>"; };
+		E2376CC4239310320072F2DF /* BookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
+		E2376CC5239310320072F2DF /* BookingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingCell.xib; sourceTree = "<group>"; };
+		E2745CD123883F9200F665E4 /* PAStorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAStorageHelper.m; sourceTree = "<group>"; };
+		E2745CD523883F9200F665E4 /* PAStorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAStorageHelper.h; sourceTree = "<group>"; };
+		E2745CD923883F9200F665E4 /* GeocodeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodeService.swift; sourceTree = "<group>"; };
+		E2745CDA23883F9200F665E4 /* ImagePickerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerService.swift; sourceTree = "<group>"; };
+		E2745CDD23883F9200F665E4 /* AuthEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		E2745CDF23883F9200F665E4 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		E2745CE123883F9200F665E4 /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		E2745CE223883F9200F665E4 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E2745CE323883F9200F665E4 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E2745CE523883F9200F665E4 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E2745CE823883F9200F665E4 /* HomePresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresentable.swift; sourceTree = "<group>"; };
+		E2745CE923883F9200F665E4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E2745CEA23883F9200F665E4 /* GeneralUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtilities.swift; sourceTree = "<group>"; };
+		E2745CEC23883F9200F665E4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2745CED23883F9200F665E4 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		E2745CEF23883F9200F665E4 /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		E2745D05238843B600F665E4 /* Keodoz-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Keodoz-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2745D08238844E200F665E4 /* WAShareHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAShareHelper.swift; sourceTree = "<group>"; };
+		E2745D0A238844E200F665E4 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		E2745D0B238844E200F665E4 /* GeoRegionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoRegionRequest.swift; sourceTree = "<group>"; };
+		E2745D0C238844E200F665E4 /* VisitRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitRequest.swift; sourceTree = "<group>"; };
+		E2745D0D238844E200F665E4 /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		E2745D0E238844E200F665E4 /* HeadingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingRequest.swift; sourceTree = "<group>"; };
+		E2745D0F238844E200F665E4 /* BeaconsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsManager.swift; sourceTree = "<group>"; };
+		E2745D10238844E200F665E4 /* SwiftLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftLocation.h; sourceTree = "<group>"; };
+		E2745D11238844E200F665E4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E2745D12238844E200F665E4 /* BeaconAdvertiseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconAdvertiseRequest.swift; sourceTree = "<group>"; };
+		E2745D13238844E200F665E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2745D14238844E200F665E4 /* BeaconRegionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRegionRequest.swift; sourceTree = "<group>"; };
+		E2745D15238844E200F665E4 /* ConstantDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantDevices.swift; sourceTree = "<group>"; };
+		E2745D18238844E200F665E4 /* UITextField+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Additions.h"; sourceTree = "<group>"; };
+		E2745D19238844E200F665E4 /* UITextField+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Additions.m"; sourceTree = "<group>"; };
+		E2745D1A238844E200F665E4 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E2745D1D238844E200F665E4 /* UIViewController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
+		E2745D1E238844E200F665E4 /* UIViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
+		E2745D1F238844E200F665E4 /* ConnectionCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		E2745D20238844E200F665E4 /* KGRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGRadioButton.swift; sourceTree = "<group>"; };
+		E2745D21238844E200F665E4 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		E2745D23238844E200F665E4 /* demoImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demoImage.jpg; sourceTree = "<group>"; };
+		E2745D24238844E200F665E4 /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		E2745D26238844E300F665E4 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		E2745D27238844E300F665E4 /* UIViewcontrollerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewcontrollerExtension.swift; sourceTree = "<group>"; };
+		E2745D29238844E300F665E4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		E2745D2A238844E300F665E4 /* WAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WAView.swift; sourceTree = "<group>"; };
+		E2745D2B238844E300F665E4 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		E27A1D0A2394FC3300DFB6A6 /* KDOrderEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDOrderEndVC.swift; sourceTree = "<group>"; };
+		E292EF9523A361B4007D0FF7 /* KDProUserBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDProUserBookingVC.swift; sourceTree = "<group>"; };
+		E292EF9723A36318007D0FF7 /* ProUserOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProUserOrder.swift; sourceTree = "<group>"; };
+		E29B9B952387E483009084E3 /* Keudoz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keudoz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B9B982387E483009084E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E29B9B9A2387E483009084E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E29B9B9F2387E483009084E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E29B9BA12387E484009084E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E29B9BA42387E484009084E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E29B9BA62387E484009084E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29B9BAB2387E484009084E3 /* KeodozTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeodozTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B9BAF2387E484009084E3 /* KeodozTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeodozTests.swift; sourceTree = "<group>"; };
+		E29B9BB12387E484009084E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29B9BB62387E484009084E3 /* KeodozUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeodozUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B9BBA2387E484009084E3 /* KeodozUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeodozUITests.swift; sourceTree = "<group>"; };
+		E29B9BBC2387E484009084E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2ABD6CC238BC8D100AF0C33 /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		E2ABD6CD238BC8D100AF0C33 /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		E2B9D2A123884F1000A91EA2 /* KDSelectLoginOrSignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSelectLoginOrSignVC.swift; sourceTree = "<group>"; };
+		E2BF517C238A826C00353ACF /* CoachListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachListCell.swift; sourceTree = "<group>"; };
+		E2BF517D238A826C00353ACF /* CoachListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachListCell.xib; sourceTree = "<group>"; };
+		E2BF5181238ABA7900353ACF /* KDServiceDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDServiceDetailVC.swift; sourceTree = "<group>"; };
+		E2BF5183238ABDB000353ACF /* KDServiceHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDServiceHeaderCell.swift; sourceTree = "<group>"; };
+		E2BF5184238ABDB000353ACF /* KDServiceHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDServiceHeaderCell.xib; sourceTree = "<group>"; };
+		E2BF5187238AC62E00353ACF /* HeaderCellForService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellForService.swift; sourceTree = "<group>"; };
+		E2BF5188238AC62E00353ACF /* HeaderCellForService.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCellForService.xib; sourceTree = "<group>"; };
+		E2BF518B238AC79900353ACF /* ServicesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionCell.swift; sourceTree = "<group>"; };
+		E2BF518C238AC79900353ACF /* ServicesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesCollectionCell.xib; sourceTree = "<group>"; };
+		E2BF5193238ACB9200353ACF /* KDServiceHeaderCellss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDServiceHeaderCellss.swift; sourceTree = "<group>"; };
+		E2BF5194238ACB9200353ACF /* KDServiceHeaderCellss.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDServiceHeaderCellss.xib; sourceTree = "<group>"; };
+		E2BF5197238ACC0A00353ACF /* HeaderCellForServicesss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellForServicesss.swift; sourceTree = "<group>"; };
+		E2BF5198238ACC0A00353ACF /* HeaderCellForServicesss.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCellForServicesss.xib; sourceTree = "<group>"; };
+		E2BF519B238ACC4B00353ACF /* ServicesCollectionCellss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionCellss.swift; sourceTree = "<group>"; };
+		E2BF519C238ACC4B00353ACF /* ServicesCollectionCellss.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesCollectionCellss.xib; sourceTree = "<group>"; };
+		E2BF519F238ACC9200353ACF /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		E2BF51A0238ACC9200353ACF /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		E2BF51A4238B0BBF00353ACF /* KDBookNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDBookNowVC.swift; sourceTree = "<group>"; };
+		E2BF51A6238B0BFB00353ACF /* BookServiceHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookServiceHeaderCell.swift; sourceTree = "<group>"; };
+		E2BF51A7238B0BFB00353ACF /* BookServiceHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookServiceHeaderCell.xib; sourceTree = "<group>"; };
+		E2BF51AB238B244000353ACF /* KDAccountTypeSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAccountTypeSelectVC.swift; sourceTree = "<group>"; };
+		E2BF51AD238B264D00353ACF /* KDEnterEmailInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDEnterEmailInfoVC.swift; sourceTree = "<group>"; };
+		E2BF51AF238B275400353ACF /* KDPasswordInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDPasswordInfoVC.swift; sourceTree = "<group>"; };
+		E2BF51B1238B27CD00353ACF /* KDAccountCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAccountCreateVC.swift; sourceTree = "<group>"; };
+		E2C83D1A2397056C0051D05C /* KDSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSettingVC.swift; sourceTree = "<group>"; };
+		E2C83D1C239708590051D05C /* KDChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDChangePasswordVC.swift; sourceTree = "<group>"; };
+		E2CA024D23A2CF6F00F8B4DA /* KDUserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDUserDetailVC.swift; sourceTree = "<group>"; };
+		E2CA024F23A2DC9C00F8B4DA /* MyBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingCell.swift; sourceTree = "<group>"; };
+		E2CA025023A2DC9C00F8B4DA /* MyBookingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBookingCell.xib; sourceTree = "<group>"; };
+		E2D51FCF2398E7DB008D9CA6 /* Final-Kuedoz-HiRes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Final-Kuedoz-HiRes.jpg"; sourceTree = "<group>"; };
+		E2D51FD32398F553008D9CA6 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		E2E018AF238C6FB90082D7DF /* KDSelectPaymentMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDSelectPaymentMethodVC.swift; sourceTree = "<group>"; };
+		E2E018B2238C75890082D7DF /* KDAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAddressVC.swift; sourceTree = "<group>"; };
+		E2E018B5238C7EB10082D7DF /* KDPayNowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDPayNowVC.swift; sourceTree = "<group>"; };
+		E2E018B7238C7F280082D7DF /* TotalPayBillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPayBillCell.swift; sourceTree = "<group>"; };
+		E2E018B8238C7F280082D7DF /* TotalPayBillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalPayBillCell.xib; sourceTree = "<group>"; };
+		E2E3D8DE238A76DB009BC31D /* KDListCoachVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDListCoachVC.swift; sourceTree = "<group>"; };
+		E2E3D8E0238A7B82009BC31D /* ServiceCoachResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCoachResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29B9B922387E483009084E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E28C4C9DFA066F4395C18BF /* Pods_Keudoz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BA82387E484009084E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BB32387E484009084E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2036C9323A404CF00D0ECDE /* KDProUserProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2036C9423A404D800D0ECDE /* KDProUserProfileVC.swift */,
+				E2036C9623A41C5700D0ECDE /* ProfileInfo.swift */,
+				E2036C9823A4366900D0ECDE /* KDProUserEditProfileVC.swift */,
+			);
+			path = KDProUserProfileVC;
+			sourceTree = "<group>";
+		};
+		E2045BEC238A62AF00B30515 /* KDSerciceListVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2045BED238A62B900B30515 /* KDSerciceListVC.swift */,
+				E2045BFC238A6B0D00B30515 /* ServiceResponse.swift */,
+			);
+			path = KDSerciceListVC;
+			sourceTree = "<group>";
+		};
+		E2045BF1238A642400B30515 /* SSSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E2045BF2238A642400B30515 /* SSASideMenu.swift */,
+				E2045BF3238A642400B30515 /* LeftMenuViewController.swift */,
+			);
+			path = SSSideMenu;
+			sourceTree = "<group>";
+		};
+		E2045BF6238A685500B30515 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2ABD6CD238BC8D100AF0C33 /* SideMenuCell.swift */,
+				E2ABD6CC238BC8D100AF0C33 /* SideMenuCell.xib */,
+				E2045BF8238A686D00B30515 /* ServiceCell.swift */,
+				E2045BF9238A686D00B30515 /* ServiceCell.xib */,
+				E2BF517C238A826C00353ACF /* CoachListCell.swift */,
+				E2BF517D238A826C00353ACF /* CoachListCell.xib */,
+				E2BF5193238ACB9200353ACF /* KDServiceHeaderCellss.swift */,
+				E2BF5194238ACB9200353ACF /* KDServiceHeaderCellss.xib */,
+				E2BF5197238ACC0A00353ACF /* HeaderCellForServicesss.swift */,
+				E2BF5198238ACC0A00353ACF /* HeaderCellForServicesss.xib */,
+				E2BF519B238ACC4B00353ACF /* ServicesCollectionCellss.swift */,
+				E2BF519C238ACC4B00353ACF /* ServicesCollectionCellss.xib */,
+				E2BF519F238ACC9200353ACF /* ReviewCell.swift */,
+				E2BF51A0238ACC9200353ACF /* ReviewCell.xib */,
+				E2BF51A6238B0BFB00353ACF /* BookServiceHeaderCell.swift */,
+				E2BF51A7238B0BFB00353ACF /* BookServiceHeaderCell.xib */,
+				E205CD6B238C34D40027CD29 /* BookingOrderCell.swift */,
+				E205CD6C238C34D40027CD29 /* BookingOrderCell.xib */,
+				E205CD6F238C54240027CD29 /* DateAndPaymentCell.swift */,
+				E205CD70238C54240027CD29 /* DateAndPaymentCell.xib */,
+				E2E018B7238C7F280082D7DF /* TotalPayBillCell.swift */,
+				E2E018B8238C7F280082D7DF /* TotalPayBillCell.xib */,
+				E2376CC4239310320072F2DF /* BookingCell.swift */,
+				E2376CC5239310320072F2DF /* BookingCell.xib */,
+				E2CA024F23A2DC9C00F8B4DA /* MyBookingCell.swift */,
+				E2CA025023A2DC9C00F8B4DA /* MyBookingCell.xib */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		E2045BF7238A685500B30515 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF5183238ABDB000353ACF /* KDServiceHeaderCell.swift */,
+				E2BF5184238ABDB000353ACF /* KDServiceHeaderCell.xib */,
+				E2BF5187238AC62E00353ACF /* HeaderCellForService.swift */,
+				E2BF5188238AC62E00353ACF /* HeaderCellForService.xib */,
+				E2BF518B238AC79900353ACF /* ServicesCollectionCell.swift */,
+				E2BF518C238AC79900353ACF /* ServicesCollectionCell.xib */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E20483872389CB5300586490 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E20483882389CB5300586490 /* TQConstants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E205CD73238C5DB90027CD29 /* KDScheduleBookingVC */ = {
+			isa = PBXGroup;
+			children = (
+				E205CD74238C5DC90027CD29 /* KDScheduleBookingVC.swift */,
+			);
+			path = KDScheduleBookingVC;
+			sourceTree = "<group>";
+		};
+		E21AD7EF238BC6210015580C /* KDSideMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				E21AD7F0238BC7490015580C /* KDSideMenuVC.swift */,
+				E21AD7F2238BC7E10015580C /* SideMenu.swift */,
+			);
+			path = KDSideMenuVC;
+			sourceTree = "<group>";
+		};
+		E22CBE082389C73F001F83E6 /* KDLoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				E22CBE092389C74A001F83E6 /* KDLoginVC.swift */,
+			);
+			path = KDLoginVC;
+			sourceTree = "<group>";
+		};
+		E2376CBE23930BA60072F2DF /* KDProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2376CBF23930BB40072F2DF /* KDProfileVC.swift */,
+			);
+			path = KDProfileVC;
+			sourceTree = "<group>";
+		};
+		E2376CC123930FA10072F2DF /* KDBookingVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2376CC223930FAC0072F2DF /* KDBookingVC.swift */,
+				E27A1D0A2394FC3300DFB6A6 /* KDOrderEndVC.swift */,
+			);
+			path = KDBookingVC;
+			sourceTree = "<group>";
+		};
+		E2745CCF23883F9200F665E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CD023883F9200F665E4 /* DataBase */,
+				E2745CD923883F9200F665E4 /* GeocodeService.swift */,
+				E2745CDA23883F9200F665E4 /* ImagePickerService.swift */,
+				E2745CDB23883F9200F665E4 /* Network */,
+				E2745CE423883F9200F665E4 /* Local */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E2745CD023883F9200F665E4 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CD123883F9200F665E4 /* PAStorageHelper.m */,
+				E2745CD523883F9200F665E4 /* PAStorageHelper.h */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		E2745CDB23883F9200F665E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CDC23883F9200F665E4 /* Endpoints */,
+				E2745CDE23883F9200F665E4 /* Responses */,
+				E2745CE023883F9200F665E4 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2745CDC23883F9200F665E4 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CDD23883F9200F665E4 /* AuthEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		E2745CDE23883F9200F665E4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CDF23883F9200F665E4 /* LoginResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		E2745CE023883F9200F665E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CE123883F9200F665E4 /* NetworkLayer.swift */,
+				E2745CE223883F9200F665E4 /* Response.swift */,
+				E2745CE323883F9200F665E4 /* Endpoint.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E2745CE423883F9200F665E4 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CE523883F9200F665E4 /* Persistence.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E2745CE723883F9200F665E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D05238843B600F665E4 /* Keodoz-Bridging-Header.h */,
+				E2745CE823883F9200F665E4 /* HomePresentable.swift */,
+				E2745CE923883F9200F665E4 /* Utilities.swift */,
+				E2745CEA23883F9200F665E4 /* GeneralUtilities.swift */,
+				E2745CEC23883F9200F665E4 /* Extensions.swift */,
+				E2745CED23883F9200F665E4 /* Storyboard.swift */,
+				E2745CEE23883F9200F665E4 /* ui-utils */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2745CEE23883F9200F665E4 /* ui-utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CEF23883F9200F665E4 /* ProgressIndicator.swift */,
+			);
+			path = "ui-utils";
+			sourceTree = "<group>";
+		};
+		E2745D062388441B00F665E4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E2D51FD32398F553008D9CA6 /* DatePickerDialog.swift */,
+				E2D51FCF2398E7DB008D9CA6 /* Final-Kuedoz-HiRes.jpg */,
+				E2045BF1238A642400B30515 /* SSSideMenu */,
+				E20483872389CB5300586490 /* Constant */,
+				E20483852389CB1F00586490 /* RegistrationPresenter.swift */,
+				E22CBE062389C473001F83E6 /* RoundedButton.swift */,
+				E2745D1C238844E200F665E4 /* AlertController */,
+				E2745D21238844E200F665E4 /* Buttons.swift */,
+				E2745D2B238844E300F665E4 /* CardCell.swift */,
+				E2745D1A238844E200F665E4 /* CardView.swift */,
+				E2745D16238844E200F665E4 /* Categories */,
+				E2745D1F238844E200F665E4 /* ConnectionCheck.swift */,
+				E2745D15238844E200F665E4 /* ConstantDevices.swift */,
+				E2745D25238844E200F665E4 /* Extensions */,
+				E2745D1B238844E200F665E4 /* Font */,
+				E2745D20238844E200F665E4 /* KGRadioButton.swift */,
+				E2745D22238844E200F665E4 /* PhotoPicker */,
+				E2745D09238844E200F665E4 /* SwiftLocation */,
+				E2745D07238844E200F665E4 /* WASharedHelper */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E2745D07238844E200F665E4 /* WASharedHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D08238844E200F665E4 /* WAShareHelper.swift */,
+			);
+			path = WASharedHelper;
+			sourceTree = "<group>";
+		};
+		E2745D09238844E200F665E4 /* SwiftLocation */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D0A238844E200F665E4 /* Commons.swift */,
+				E2745D0B238844E200F665E4 /* GeoRegionRequest.swift */,
+				E2745D0C238844E200F665E4 /* VisitRequest.swift */,
+				E2745D0D238844E200F665E4 /* LocationRequest.swift */,
+				E2745D0E238844E200F665E4 /* HeadingRequest.swift */,
+				E2745D0F238844E200F665E4 /* BeaconsManager.swift */,
+				E2745D10238844E200F665E4 /* SwiftLocation.h */,
+				E2745D11238844E200F665E4 /* LocationManager.swift */,
+				E2745D12238844E200F665E4 /* BeaconAdvertiseRequest.swift */,
+				E2745D13238844E200F665E4 /* Info.plist */,
+				E2745D14238844E200F665E4 /* BeaconRegionRequest.swift */,
+			);
+			path = SwiftLocation;
+			sourceTree = "<group>";
+		};
+		E2745D16238844E200F665E4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D17238844E200F665E4 /* UITextField */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E2745D17238844E200F665E4 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D18238844E200F665E4 /* UITextField+Additions.h */,
+				E2745D19238844E200F665E4 /* UITextField+Additions.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		E2745D1B238844E200F665E4 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E22CBDF62389B204001F83E6 /* GT-Eesti-Pro-Display-Bold-Italic.ttf */,
+				E22CBDF82389B204001F83E6 /* GT-Eesti-Pro-Display-Bold.ttf */,
+				E22CBDFD2389B204001F83E6 /* GT-Eesti-Pro-Display-Light.ttf */,
+				E22CBDF72389B204001F83E6 /* GT-Eesti-Pro-Display-Medium.ttf */,
+				E22CBDF92389B204001F83E6 /* GT-Eesti-Pro-Display-Regular.ttf */,
+				E22CBDFC2389B204001F83E6 /* GT-Eesti-Pro-Display-Thin.ttf */,
+				E22CBDFA2389B204001F83E6 /* GT-Eesti-Pro-Display-UBold.ttf */,
+				E22CBDFB2389B204001F83E6 /* GT-Eesti-Pro-Display-ULight.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E2745D1C238844E200F665E4 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D1D238844E200F665E4 /* UIViewController+Helper.h */,
+				E2745D1E238844E200F665E4 /* UIViewController+Helper.m */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		E2745D22238844E200F665E4 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D23238844E200F665E4 /* demoImage.jpg */,
+				E2745D24238844E200F665E4 /* PhotoPicker.swift */,
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		E2745D25238844E200F665E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D26238844E300F665E4 /* UIAlertControllerExtension.swift */,
+				E2745D27238844E300F665E4 /* UIViewcontrollerExtension.swift */,
+				E2745D28238844E300F665E4 /* UIColorExtenios */,
+				E2745D2A238844E300F665E4 /* WAView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2745D28238844E300F665E4 /* UIColorExtenios */ = {
+			isa = PBXGroup;
+			children = (
+				E2745D29238844E300F665E4 /* UIColorExtension.swift */,
+			);
+			path = UIColorExtenios;
+			sourceTree = "<group>";
+		};
+		E292EF9423A36130007D0FF7 /* KDProUserBookingVC */ = {
+			isa = PBXGroup;
+			children = (
+				E292EF9523A361B4007D0FF7 /* KDProUserBookingVC.swift */,
+				E292EF9723A36318007D0FF7 /* ProUserOrder.swift */,
+				E2036C9123A3EBC000D0ECDE /* KDAcceptBookingVC.swift */,
+			);
+			path = KDProUserBookingVC;
+			sourceTree = "<group>";
+		};
+		E29B9B8C2387E483009084E3 = {
+			isa = PBXGroup;
+			children = (
+				E29B9B972387E483009084E3 /* Keodoz */,
+				E2745D062388441B00F665E4 /* Resource */,
+				E29B9BAE2387E484009084E3 /* KeodozTests */,
+				E29B9BB92387E484009084E3 /* KeodozUITests */,
+				E29B9B962387E483009084E3 /* Products */,
+				F59BABC1D534AF0AA83E8DDE /* Pods */,
+				E45C7F1D8DCB64CA2AD984F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E29B9B962387E483009084E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29B9B952387E483009084E3 /* Keudoz.app */,
+				E29B9BAB2387E484009084E3 /* KeodozTests.xctest */,
+				E29B9BB62387E484009084E3 /* KeodozUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E29B9B972387E483009084E3 /* Keodoz */ = {
+			isa = PBXGroup;
+			children = (
+				E2745CCF23883F9200F665E4 /* Services */,
+				E2745CE723883F9200F665E4 /* Utilities */,
+				E29B9B982387E483009084E3 /* AppDelegate.swift */,
+				E29B9B9A2387E483009084E3 /* SceneDelegate.swift */,
+				E2B9D29F23884EAA00A91EA2 /* ViewController */,
+				E29B9B9E2387E483009084E3 /* Main.storyboard */,
+				E29B9BA12387E484009084E3 /* Assets.xcassets */,
+				E29B9BA32387E484009084E3 /* LaunchScreen.storyboard */,
+				E29B9BA62387E484009084E3 /* Info.plist */,
+				E2045BEF238A62D700B30515 /* Home.storyboard */,
+				E2045BF7238A685500B30515 /* UICollectionViewCell */,
+				E2045BF6238A685500B30515 /* UITableViewCell */,
+			);
+			path = Keodoz;
+			sourceTree = "<group>";
+		};
+		E29B9BAE2387E484009084E3 /* KeodozTests */ = {
+			isa = PBXGroup;
+			children = (
+				E29B9BAF2387E484009084E3 /* KeodozTests.swift */,
+				E29B9BB12387E484009084E3 /* Info.plist */,
+			);
+			path = KeodozTests;
+			sourceTree = "<group>";
+		};
+		E29B9BB92387E484009084E3 /* KeodozUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E29B9BBA2387E484009084E3 /* KeodozUITests.swift */,
+				E29B9BBC2387E484009084E3 /* Info.plist */,
+			);
+			path = KeodozUITests;
+			sourceTree = "<group>";
+		};
+		E2B9D29F23884EAA00A91EA2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2036C9323A404CF00D0ECDE /* KDProUserProfileVC */,
+				E292EF9423A36130007D0FF7 /* KDProUserBookingVC */,
+				E2C83D19239705590051D05C /* KDSettingVC */,
+				E2376CC123930FA10072F2DF /* KDBookingVC */,
+				E2376CBE23930BA60072F2DF /* KDProfileVC */,
+				E2E018B4238C7EA70082D7DF /* KDPayNowVC */,
+				E2E018B1238C757F0082D7DF /* KDAddressVC */,
+				E2E018AE238C6FAD0082D7DF /* KDSelectPaymentMethodVC */,
+				E205CD73238C5DB90027CD29 /* KDScheduleBookingVC */,
+				E2BF51A3238B0BB000353ACF /* KDBookNowVC */,
+				E2BF5180238ABA5D00353ACF /* KDServiceDetailVC */,
+				E2E3D8DD238A76CB009BC31D /* KDListCoachVC */,
+				E21AD7EF238BC6210015580C /* KDSideMenuVC */,
+				E2045BEC238A62AF00B30515 /* KDSerciceListVC */,
+				E2BF51AA238B242500353ACF /* KDAccountTypeVC */,
+				E22CBE082389C73F001F83E6 /* KDLoginVC */,
+				E2B9D2A023884EFD00A91EA2 /* KDSelectLoginOrSignVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E2B9D2A023884EFD00A91EA2 /* KDSelectLoginOrSignVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9D2A123884F1000A91EA2 /* KDSelectLoginOrSignVC.swift */,
+			);
+			path = KDSelectLoginOrSignVC;
+			sourceTree = "<group>";
+		};
+		E2BF5180238ABA5D00353ACF /* KDServiceDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF5181238ABA7900353ACF /* KDServiceDetailVC.swift */,
+			);
+			path = KDServiceDetailVC;
+			sourceTree = "<group>";
+		};
+		E2BF51A3238B0BB000353ACF /* KDBookNowVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF51A4238B0BBF00353ACF /* KDBookNowVC.swift */,
+			);
+			path = KDBookNowVC;
+			sourceTree = "<group>";
+		};
+		E2BF51AA238B242500353ACF /* KDAccountTypeVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF51AB238B244000353ACF /* KDAccountTypeSelectVC.swift */,
+				E2BF51AD238B264D00353ACF /* KDEnterEmailInfoVC.swift */,
+				E2BF51AF238B275400353ACF /* KDPasswordInfoVC.swift */,
+				E2BF51B1238B27CD00353ACF /* KDAccountCreateVC.swift */,
+				E236420E23A192D300FBDB26 /* KDServiceCreateVC.swift */,
+				E2CA024D23A2CF6F00F8B4DA /* KDUserDetailVC.swift */,
+			);
+			path = KDAccountTypeVC;
+			sourceTree = "<group>";
+		};
+		E2C83D19239705590051D05C /* KDSettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2C83D1A2397056C0051D05C /* KDSettingVC.swift */,
+				E2C83D1C239708590051D05C /* KDChangePasswordVC.swift */,
+			);
+			path = KDSettingVC;
+			sourceTree = "<group>";
+		};
+		E2E018AE238C6FAD0082D7DF /* KDSelectPaymentMethodVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2E018AF238C6FB90082D7DF /* KDSelectPaymentMethodVC.swift */,
+			);
+			path = KDSelectPaymentMethodVC;
+			sourceTree = "<group>";
+		};
+		E2E018B1238C757F0082D7DF /* KDAddressVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2E018B2238C75890082D7DF /* KDAddressVC.swift */,
+			);
+			path = KDAddressVC;
+			sourceTree = "<group>";
+		};
+		E2E018B4238C7EA70082D7DF /* KDPayNowVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2E018B5238C7EB10082D7DF /* KDPayNowVC.swift */,
+			);
+			path = KDPayNowVC;
+			sourceTree = "<group>";
+		};
+		E2E3D8DD238A76CB009BC31D /* KDListCoachVC */ = {
+			isa = PBXGroup;
+			children = (
+				E2E3D8DE238A76DB009BC31D /* KDListCoachVC.swift */,
+				E2E3D8E0238A7B82009BC31D /* ServiceCoachResponse.swift */,
+			);
+			path = KDListCoachVC;
+			sourceTree = "<group>";
+		};
+		E45C7F1D8DCB64CA2AD984F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB00D305B1E00745E42BE90 /* Pods_Keudoz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F59BABC1D534AF0AA83E8DDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2C8609605E877A26E6064E3 /* Pods-Keodoz.debug.xcconfig */,
+				A46FFB4AFB11158F4E0AD8D7 /* Pods-Keodoz.release.xcconfig */,
+				0AB73276EE040CA2B75D3233 /* Pods-Keudoz.debug.xcconfig */,
+				48CDEE208D58752D49ECB1B4 /* Pods-Keudoz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E29B9B942387E483009084E3 /* kuedoz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29B9BBF2387E484009084E3 /* Build configuration list for PBXNativeTarget "kuedoz" */;
+			buildPhases = (
+				55048BF34B3D7575792E8447 /* [CP] Check Pods Manifest.lock */,
+				E29B9B912387E483009084E3 /* Sources */,
+				E29B9B922387E483009084E3 /* Frameworks */,
+				E29B9B932387E483009084E3 /* Resources */,
+				16A7175FCACB1F022925F37D /* [CP] Embed Pods Frameworks */,
+				7DF6D5AA1C8BBDB5A36AEC0D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kuedoz;
+			productName = Keodoz;
+			productReference = E29B9B952387E483009084E3 /* Keudoz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E29B9BAA2387E484009084E3 /* KeodozTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29B9BC22387E484009084E3 /* Build configuration list for PBXNativeTarget "KeodozTests" */;
+			buildPhases = (
+				E29B9BA72387E484009084E3 /* Sources */,
+				E29B9BA82387E484009084E3 /* Frameworks */,
+				E29B9BA92387E484009084E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29B9BAD2387E484009084E3 /* PBXTargetDependency */,
+			);
+			name = KeodozTests;
+			productName = KeodozTests;
+			productReference = E29B9BAB2387E484009084E3 /* KeodozTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E29B9BB52387E484009084E3 /* KeodozUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29B9BC52387E484009084E3 /* Build configuration list for PBXNativeTarget "KeodozUITests" */;
+			buildPhases = (
+				E29B9BB22387E484009084E3 /* Sources */,
+				E29B9BB32387E484009084E3 /* Frameworks */,
+				E29B9BB42387E484009084E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29B9BB82387E484009084E3 /* PBXTargetDependency */,
+			);
+			name = KeodozUITests;
+			productName = KeodozUITests;
+			productReference = E29B9BB62387E484009084E3 /* KeodozUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E29B9B8D2387E483009084E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ahmed Durrani";
+				TargetAttributes = {
+					E29B9B942387E483009084E3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E29B9BAA2387E484009084E3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = E29B9B942387E483009084E3;
+					};
+					E29B9BB52387E484009084E3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = E29B9B942387E483009084E3;
+					};
+				};
+			};
+			buildConfigurationList = E29B9B902387E483009084E3 /* Build configuration list for PBXProject "kuedoz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E29B9B8C2387E483009084E3;
+			productRefGroup = E29B9B962387E483009084E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29B9B942387E483009084E3 /* kuedoz */,
+				E29B9BAA2387E484009084E3 /* KeodozTests */,
+				E29B9BB52387E484009084E3 /* KeodozUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E29B9B932387E483009084E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22CBE042389B204001F83E6 /* GT-Eesti-Pro-Display-Thin.ttf in Resources */,
+				E2BF51A2238ACC9200353ACF /* ReviewCell.xib in Resources */,
+				E22CBDFE2389B204001F83E6 /* GT-Eesti-Pro-Display-Bold-Italic.ttf in Resources */,
+				E22CBDFF2389B204001F83E6 /* GT-Eesti-Pro-Display-Medium.ttf in Resources */,
+				E2BF5186238ABDB000353ACF /* KDServiceHeaderCell.xib in Resources */,
+				E2BF5196238ACB9200353ACF /* KDServiceHeaderCellss.xib in Resources */,
+				E22CBE052389B204001F83E6 /* GT-Eesti-Pro-Display-Light.ttf in Resources */,
+				E2BF51A9238B0BFB00353ACF /* BookServiceHeaderCell.xib in Resources */,
+				E22CBE012389B204001F83E6 /* GT-Eesti-Pro-Display-Regular.ttf in Resources */,
+				E2BF518A238AC62E00353ACF /* HeaderCellForService.xib in Resources */,
+				E2E018BA238C7F280082D7DF /* TotalPayBillCell.xib in Resources */,
+				E22CBE002389B204001F83E6 /* GT-Eesti-Pro-Display-Bold.ttf in Resources */,
+				E2D51FD02398E7DB008D9CA6 /* Final-Kuedoz-HiRes.jpg in Resources */,
+				E22CBE032389B204001F83E6 /* GT-Eesti-Pro-Display-ULight.ttf in Resources */,
+				E2045BF0238A62D700B30515 /* Home.storyboard in Resources */,
+				E2CA025223A2DC9C00F8B4DA /* MyBookingCell.xib in Resources */,
+				E2ABD6CE238BC8D100AF0C33 /* SideMenuCell.xib in Resources */,
+				E205CD6E238C34D40027CD29 /* BookingOrderCell.xib in Resources */,
+				E2745D35238844E300F665E4 /* Info.plist in Resources */,
+				E29B9BA52387E484009084E3 /* LaunchScreen.storyboard in Resources */,
+				E2BF519A238ACC0A00353ACF /* HeaderCellForServicesss.xib in Resources */,
+				E2745D3E238844E300F665E4 /* demoImage.jpg in Resources */,
+				E2BF519E238ACC4B00353ACF /* ServicesCollectionCellss.xib in Resources */,
+				E205CD72238C54240027CD29 /* DateAndPaymentCell.xib in Resources */,
+				E2045BFB238A686D00B30515 /* ServiceCell.xib in Resources */,
+				E2BF517F238A826C00353ACF /* CoachListCell.xib in Resources */,
+				E29B9BA22387E484009084E3 /* Assets.xcassets in Resources */,
+				E2BF518E238AC79900353ACF /* ServicesCollectionCell.xib in Resources */,
+				E22CBE022389B204001F83E6 /* GT-Eesti-Pro-Display-UBold.ttf in Resources */,
+				E2376CC7239310320072F2DF /* BookingCell.xib in Resources */,
+				E29B9BA02387E483009084E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BA92387E484009084E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BB42387E484009084E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A7175FCACB1F022925F37D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55048BF34B3D7575792E8447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keudoz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF6D5AA1C8BBDB5A36AEC0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keudoz/Pods-Keudoz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E29B9B912387E483009084E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2745D3D238844E300F665E4 /* Buttons.swift in Sources */,
+				E2ABD6CF238BC8D100AF0C33 /* SideMenuCell.swift in Sources */,
+				E2745CFA23883F9200F665E4 /* NetworkLayer.swift in Sources */,
+				E2745D0323883F9200F665E4 /* Storyboard.swift in Sources */,
+				E2745D44238844E300F665E4 /* CardCell.swift in Sources */,
+				E2D51FD42398F553008D9CA6 /* DatePickerDialog.swift in Sources */,
+				E2E018B6238C7EB10082D7DF /* KDPayNowVC.swift in Sources */,
+				E2745D37238844E300F665E4 /* ConstantDevices.swift in Sources */,
+				E2E3D8DF238A76DB009BC31D /* KDListCoachVC.swift in Sources */,
+				E2745CFD23883F9200F665E4 /* Persistence.swift in Sources */,
+				E2745D0423883F9200F665E4 /* ProgressIndicator.swift in Sources */,
+				E2745CFB23883F9200F665E4 /* Response.swift in Sources */,
+				E2745D2C238844E300F665E4 /* WAShareHelper.swift in Sources */,
+				E2745D40238844E300F665E4 /* UIAlertControllerExtension.swift in Sources */,
+				E2745CF723883F9200F665E4 /* ImagePickerService.swift in Sources */,
+				E2CA025123A2DC9C00F8B4DA /* MyBookingCell.swift in Sources */,
+				E2BF51B0238B275400353ACF /* KDPasswordInfoVC.swift in Sources */,
+				E2745D41238844E300F665E4 /* UIViewcontrollerExtension.swift in Sources */,
+				E2E018B0238C6FB90082D7DF /* KDSelectPaymentMethodVC.swift in Sources */,
+				E2745D0223883F9200F665E4 /* Extensions.swift in Sources */,
+				E2745D39238844E300F665E4 /* CardView.swift in Sources */,
+				E2E018B9238C7F280082D7DF /* TotalPayBillCell.swift in Sources */,
+				E2BF51A5238B0BBF00353ACF /* KDBookNowVC.swift in Sources */,
+				E2376CC6239310320072F2DF /* BookingCell.swift in Sources */,
+				E20483892389CB5400586490 /* TQConstants.swift in Sources */,
+				E2745D31238844E300F665E4 /* HeadingRequest.swift in Sources */,
+				E2745D3C238844E300F665E4 /* KGRadioButton.swift in Sources */,
+				E2045BFA238A686D00B30515 /* ServiceCell.swift in Sources */,
+				E2CA024E23A2CF6F00F8B4DA /* KDUserDetailVC.swift in Sources */,
+				E2BF519D238ACC4B00353ACF /* ServicesCollectionCellss.swift in Sources */,
+				E2745D36238844E300F665E4 /* BeaconRegionRequest.swift in Sources */,
+				E2BF51A1238ACC9200353ACF /* ReviewCell.swift in Sources */,
+				E2745D30238844E300F665E4 /* LocationRequest.swift in Sources */,
+				E2BF518D238AC79900353ACF /* ServicesCollectionCell.swift in Sources */,
+				E2745CF923883F9200F665E4 /* LoginResponse.swift in Sources */,
+				E2C83D1B2397056C0051D05C /* KDSettingVC.swift in Sources */,
+				E21AD7F1238BC7490015580C /* KDSideMenuVC.swift in Sources */,
+				E2BF5189238AC62E00353ACF /* HeaderCellForService.swift in Sources */,
+				E29B9B992387E483009084E3 /* AppDelegate.swift in Sources */,
+				E2745D33238844E300F665E4 /* LocationManager.swift in Sources */,
+				E2036C9523A404D800D0ECDE /* KDProUserProfileVC.swift in Sources */,
+				E2745D34238844E300F665E4 /* BeaconAdvertiseRequest.swift in Sources */,
+				E2745CFC23883F9200F665E4 /* Endpoint.swift in Sources */,
+				E292EF9823A36318007D0FF7 /* ProUserOrder.swift in Sources */,
+				E205CD71238C54240027CD29 /* DateAndPaymentCell.swift in Sources */,
+				E2B9D2A223884F1000A91EA2 /* KDSelectLoginOrSignVC.swift in Sources */,
+				E292EF9623A361B4007D0FF7 /* KDProUserBookingVC.swift in Sources */,
+				E2E3D8E1238A7B82009BC31D /* ServiceCoachResponse.swift in Sources */,
+				E2745D3F238844E300F665E4 /* PhotoPicker.swift in Sources */,
+				E21AD7F3238BC7E10015580C /* SideMenu.swift in Sources */,
+				E20483862389CB1F00586490 /* RegistrationPresenter.swift in Sources */,
+				E22CBE0A2389C74A001F83E6 /* KDLoginVC.swift in Sources */,
+				E2C83D1D239708590051D05C /* KDChangePasswordVC.swift in Sources */,
+				E2036C9723A41C5700D0ECDE /* ProfileInfo.swift in Sources */,
+				E2BF517E238A826C00353ACF /* CoachListCell.swift in Sources */,
+				E22CBE072389C474001F83E6 /* RoundedButton.swift in Sources */,
+				E2745D32238844E300F665E4 /* BeaconsManager.swift in Sources */,
+				E2745D2F238844E300F665E4 /* VisitRequest.swift in Sources */,
+				E2745CFF23883F9200F665E4 /* HomePresentable.swift in Sources */,
+				E2BF5182238ABA7900353ACF /* KDServiceDetailVC.swift in Sources */,
+				E2745D43238844E300F665E4 /* WAView.swift in Sources */,
+				E2745D2D238844E300F665E4 /* Commons.swift in Sources */,
+				E2BF51B2238B27CD00353ACF /* KDAccountCreateVC.swift in Sources */,
+				E2036C9223A3EBC000D0ECDE /* KDAcceptBookingVC.swift in Sources */,
+				E2376CC023930BB40072F2DF /* KDProfileVC.swift in Sources */,
+				E2BF5195238ACB9200353ACF /* KDServiceHeaderCellss.swift in Sources */,
+				E205CD6D238C34D40027CD29 /* BookingOrderCell.swift in Sources */,
+				E27A1D0B2394FC3300DFB6A6 /* KDOrderEndVC.swift in Sources */,
+				E2BF51AC238B244000353ACF /* KDAccountTypeSelectVC.swift in Sources */,
+				E2045BEE238A62B900B30515 /* KDSerciceListVC.swift in Sources */,
+				E2745CF023883F9200F665E4 /* PAStorageHelper.m in Sources */,
+				E205CD75238C5DC90027CD29 /* KDScheduleBookingVC.swift in Sources */,
+				E2BF51A8238B0BFB00353ACF /* BookServiceHeaderCell.swift in Sources */,
+				E2745CF823883F9200F665E4 /* AuthEndpoint.swift in Sources */,
+				E2BF5185238ABDB000353ACF /* KDServiceHeaderCell.swift in Sources */,
+				E2745D2E238844E300F665E4 /* GeoRegionRequest.swift in Sources */,
+				E2045BF5238A642400B30515 /* LeftMenuViewController.swift in Sources */,
+				E2E018B3238C75890082D7DF /* KDAddressVC.swift in Sources */,
+				E2036C9923A4366900D0ECDE /* KDProUserEditProfileVC.swift in Sources */,
+				E29B9B9B2387E483009084E3 /* SceneDelegate.swift in Sources */,
+				E2745CF623883F9200F665E4 /* GeocodeService.swift in Sources */,
+				E2045BF4238A642400B30515 /* SSASideMenu.swift in Sources */,
+				E2745D42238844E300F665E4 /* UIColorExtension.swift in Sources */,
+				E236420F23A192D300FBDB26 /* KDServiceCreateVC.swift in Sources */,
+				E2745D0123883F9200F665E4 /* GeneralUtilities.swift in Sources */,
+				E2745D3A238844E300F665E4 /* UIViewController+Helper.m in Sources */,
+				E2745D38238844E300F665E4 /* UITextField+Additions.m in Sources */,
+				E2745D3B238844E300F665E4 /* ConnectionCheck.swift in Sources */,
+				E2045BFD238A6B0D00B30515 /* ServiceResponse.swift in Sources */,
+				E2376CC323930FAC0072F2DF /* KDBookingVC.swift in Sources */,
+				E2BF5199238ACC0A00353ACF /* HeaderCellForServicesss.swift in Sources */,
+				E2BF51AE238B264D00353ACF /* KDEnterEmailInfoVC.swift in Sources */,
+				E2745D0023883F9200F665E4 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BA72387E484009084E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29B9BB02387E484009084E3 /* KeodozTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29B9BB22387E484009084E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29B9BBB2387E484009084E3 /* KeodozUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E29B9BAD2387E484009084E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29B9B942387E483009084E3 /* kuedoz */;
+			targetProxy = E29B9BAC2387E484009084E3 /* PBXContainerItemProxy */;
+		};
+		E29B9BB82387E484009084E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29B9B942387E483009084E3 /* kuedoz */;
+			targetProxy = E29B9BB72387E484009084E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E29B9B9E2387E483009084E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29B9B9F2387E483009084E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E29B9BA32387E484009084E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29B9BA42387E484009084E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E29B9BBD2387E484009084E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ahmed/Documents/Keodoz/Keodoz/Utilities/Keodoz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E29B9BBE2387E484009084E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ahmed/Documents/Keodoz/Keodoz/Utilities/Keodoz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E29B9BC02387E484009084E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB73276EE040CA2B75D3233 /* Pods-Keudoz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCDJ2647RH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Keodoz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.Keodoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E29B9BC12387E484009084E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48CDEE208D58752D49ECB1B4 /* Pods-Keudoz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCDJ2647RH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Keodoz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.Keodoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E29B9BC32387E484009084E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeodozTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.KeodozTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keodoz.app/Keodoz";
+			};
+			name = Debug;
+		};
+		E29B9BC42387E484009084E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeodozTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.KeodozTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keodoz.app/Keodoz";
+			};
+			name = Release;
+		};
+		E29B9BC62387E484009084E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KeodozUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.KeodozUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keodoz;
+			};
+			name = Debug;
+		};
+		E29B9BC72387E484009084E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KeodozUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = techEase.KeodozUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Keodoz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E29B9B902387E483009084E3 /* Build configuration list for PBXProject "kuedoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B9BBD2387E484009084E3 /* Debug */,
+				E29B9BBE2387E484009084E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29B9BBF2387E484009084E3 /* Build configuration list for PBXNativeTarget "kuedoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B9BC02387E484009084E3 /* Debug */,
+				E29B9BC12387E484009084E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29B9BC22387E484009084E3 /* Build configuration list for PBXNativeTarget "KeodozTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B9BC32387E484009084E3 /* Debug */,
+				E29B9BC42387E484009084E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29B9BC52387E484009084E3 /* Build configuration list for PBXNativeTarget "KeodozUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B9BC62387E484009084E3 /* Debug */,
+				E29B9BC72387E484009084E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E29B9B8D2387E483009084E3 /* Project object */;
+}

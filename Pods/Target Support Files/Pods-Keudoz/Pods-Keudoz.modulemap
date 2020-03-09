@@ -1,0 +1,6 @@
+framework module Pods_Keudoz {
+  umbrella header "Pods-Keudoz-umbrella.h"
+
+  export *
+  module * { export * }
+}
